@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "../App.css";
+import { TbArrowsMaximize } from "react-icons/tb";
 export default function Previewer() {
     const [isFirstDivVisible, setIsFirstDivVisible] = useState(true);
     const [isSecondDivVisible, setIsSecondDivVisible] = useState(true);
@@ -51,10 +52,10 @@ export default function Previewer() {
       return (
         <div>
           <div style={firstDivStyle} id='firstbx'>
-            <button onClick={toggleFirstDiv}>Toggle First Div</button>
+            <button onClick={toggleFirstDiv}><TbArrowsMaximize/></button>
           </div>
           <div style={secondDivStyle} id="secondbx">
-            <button onClick={toggleSecondDiv}>Toggle Second Div</button>
+            <button onClick={toggleSecondDiv}><TbArrowsMaximize/></button>
           </div>
         </div>
       );
